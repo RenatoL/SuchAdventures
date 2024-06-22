@@ -1,4 +1,4 @@
-![Hero Image]()
+![Hero Image](https://github.com/RenatoL/my-adventures-website/blob/main/public/NatureTattoo.png?raw=true)
 
 <div>
 <h1 align="center">Such Adventures</h1>
