@@ -1,6 +1,6 @@
 import type { CollectionEntry } from 'astro:content'
 
-export type PostKey = 'blog'
+export type PostKey = 'stories'
 
 export type CollectionPosts = CollectionEntry<PostKey>
 

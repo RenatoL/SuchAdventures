@@ -1,100 +1,66 @@
 export const siteConfig = {
-  author: 'Kevin Wong',
-  title: 'Vitesse theme for Astro',
-  subtitle: 'Vitesse theme for Astro, supports Vue and UnoCSS.',
-  description: 'A Minimal, SEO-friendly portfolio and blog theme for Astro.',
+  author: 'Renato Lourinho',
+  title: 'Adventures',
+  subtitle: 'On Two Wheels, Hikes, and More',
+  description: 'A compact blog for some of my adventures',
   image: {
-    src: '/hero.jpg',
+    src: '/NatureTattoo.png',
     alt: 'Website Main Image',
   },
-  email: 'kevinwong865@gmail.com',
+  email: 'renato@lourinho.com',
+  emailIcon: 'i-carbon-email',
   socialLinks: [
     {
       text: 'GitHub',
-      href: '',
-      icon: 'i-simple-icons-github',
-      header: 'i-ri-github-line',
-    },
-    {
-      text: 'Twitter',
-      href: '',
-      icon: 'i-simple-icons-x',
-      header: 'i-ri-twitter-x-line',
+      href: 'https://github.com/RenatoL',
+      icon: 'i-ri-github-line',
     },
     {
       text: 'Linkedin',
-      href: '',
+      href: 'https://www.linkedin.com/in/renato-lourinho/',
       icon: 'i-simple-icons-linkedin',
     },
     {
       text: 'Instagram',
-      href: '',
+      href: 'https://www.instagram.com/natolourinho/',
       icon: 'i-simple-icons-instagram',
     },
     {
       text: 'Youtube',
-      href: '',
+      href: 'https://www.youtube.com/@SuchAdventures',
       icon: 'i-simple-icons-youtube',
     },
   ],
   header: {
     logo: {
-      src: '/favicon.svg',
+      src: '/NatureTattoo.png',
       alt: 'Logo Image',
     },
     navLinks: [
       {
-        text: 'Blog',
-        href: '/blog',
+        text: 'Content',
+        href: '/stories',
       },
       {
-        text: 'Notes',
-        href: '/blog/notes',
-      },
-      {
-        text: 'Talks',
-        href: '/blog/talks',
-      },
-      {
-        text: 'Projects',
-        href: '/projects',
+        text: 'Gear',
+        href: '/gear',
       },
     ],
   },
   page: {
     blogLinks: [
       {
-        text: 'Blog',
-        href: '/blog',
+        text: 'Stories',
+        href: '/stories',
       },
       {
-        text: 'Notes',
-        href: '/blog/notes',
-      },
-      {
-        text: 'Talks',
-        href: '/blog/talks',
+        text: 'Videos',
+        href: '/stories/videos',
       },
     ],
   },
   footer: {
     navLinks: [
-      {
-        text: 'Posts Props',
-        href: '/posts-props',
-      },
-      {
-        text: 'Markdown Style',
-        href: '/md-style',
-      },
-      {
-        text: 'View on Astro',
-        href: 'https://astro.build/themes/details/vitesse-theme-for-astro/',
-      },
-      {
-        text: 'GitHub Repository',
-        href: 'https://github.com/kevinwong865/astro-theme-vitesse',
-      },
     ],
   },
 }

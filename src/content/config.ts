@@ -12,7 +12,7 @@ const pages = defineCollection({
   }),
 })
 
-const blog = defineCollection({
+const stories = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string().optional(),
@@ -38,4 +38,4 @@ const blog = defineCollection({
   }),
 })
 
-export const collections = { pages, blog }
+export const collections = { pages, stories }

@@ -76,12 +76,12 @@ function toggleNavDrawer() {
 
 <template>
   <header
-    id="header" :class="{ 'header-bg-blur': scroll > 20 }"
-    class="!fixed bg-transparent z-899 w-screen h-20 px-6 flex justify-between items-center relative"
+    id="header" :class="{ 'header-bg-blur': scroll > 5 }"
+    class="!fixed bg-transparent z-899 w-screen h-40 px-6 flex justify-between items-center relative"
   >
     <div class="flex items-center h-full">
       <a href="/" mr-6 aria-label="Header Logo Image">
-        <img width="32" height="32" :src="siteConfig.header.logo.src" :alt="siteConfig.header.logo.alt">
+        <img width="128" height="128" :src="siteConfig.header.logo.src" :alt="siteConfig.header.logo.alt">
       </a>
       <nav class="sm:flex hidden flex-wrap gap-x-6 position-initial flex-row">
         <a
@@ -122,7 +122,7 @@ function toggleNavDrawer() {
 <style scoped>
 .header-hide {
   transform: translateY(-100%);
-  transition: transform 0.4s ease;
+  transition: transform 0.6s ease;
 }
 
 .header-bg-blur {
