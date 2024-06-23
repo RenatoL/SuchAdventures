@@ -4,7 +4,7 @@ export const siteConfig = {
   subtitle: 'On Two Wheels, Hikes, and More',
   description: 'A compact blog for some of my adventures',
   image: {
-    src: '/NatureTattoo.png',
+    src: '/src/assets/NatureTattoo.png',
     alt: 'Website Main Image',
   },
   email: 'renato@lourinho.com',
@@ -33,7 +33,7 @@ export const siteConfig = {
   ],
   header: {
     logo: {
-      src: '/NatureTattoo.png',
+      src: '/src/assets/NatureTattoo.png',
       alt: 'Logo Image',
     },
     navLinks: [

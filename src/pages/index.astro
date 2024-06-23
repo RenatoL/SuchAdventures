@@ -1,18 +1,22 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro'
 import siteConfig from '@/site-config'
+import { Image } from 'astro:assets'
+import dogePicture from '/src/assets/wow-doge.png'
+import heroLogo from '/src/assets/NatureTattoo.png'
 ---
 
 <BaseLayout description={siteConfig.description}>
   <article class="prose">
     <h1 class="text-title">
       Such Wow, Much Adventures
-      <img
-        src="/wow-doge.png"
+      <Image
+        src={dogePicture}
         alt="meme"
         align="right"
         width="80"
         height="80"
+        onContextMenu="return false;"
       />
     </h1>
     <p class="intro-paragraph" px-4>
@@ -20,10 +24,11 @@ import siteConfig from '@/site-config'
       adventures out in the world.
     </p>
     <p>
-      <img
-        src="/NatureTattoo.png"
+      <Image
+        src={heroLogo}
         alt="Hero Image"
         style="filter: drop-shadow(1px 1px 50px);"
+        onContextMenu="return false;"
       />
     </p>
     <hr class="hr-line" />
@@ -31,14 +36,8 @@ import siteConfig from '@/site-config'
       Find me on
       {
         siteConfig.socialLinks.map((link) => (
-          <a
-            aria-label={link.text}
-            href={link.href}
-            target="_blank"
-            class="prose-link"
-          >
+          <a aria-label={link.text} href={link.href} target="_blank">
             <i class:list={[link.icon]} />
-            {link.text}
           </a>
         ))
       }
