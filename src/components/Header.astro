@@ -1,0 +1,31 @@
+---
+import Navigation from './Navigation.astro'
+import ThemeIcon from './ThemeIcon.astro'
+import { Image } from 'astro:assets'
+import heroLogo from '/src/assets/NatureTattoo.png'
+---
+
+<header
+  id="header"
+  class="bg-transparent z-899 w-screen h-40 px-6 flex justify-between items-center relative"
+>
+  <div class="flex items-center h-full">
+    <a href="/" mr-6 aria-label="Header Logo Image">
+      <Image
+        src={heroLogo}
+        alt="Logo"
+        width="128"
+        height="128"
+        onContextMenu="return false;"
+      />
+      <nav class="sm:flex hidden flex-wrap gap-x-6 position-initial flex-row">
+        <Navigation />
+      </nav>
+    </a>
+    <div class="!fixed flex gap-x-6 justify-center right-16">
+      <a nav-link target="_blank" href="/rss.xml" i-ri-rss-line aria-label="RSS"
+      ></a>
+      <a nav-link> <ThemeIcon /></a>
+    </div>
+  </div>
+</header>

@@ -23,24 +23,23 @@ import heroLogo from '/src/assets/NatureTattoo.png'
       A personal page where I invite you to reminisce with me such enjoyable
       adventures out in the world.
     </p>
-    <p>
+    <div>
       <Image
         src={heroLogo}
         alt="Hero Image"
         style="filter: drop-shadow(1px 1px 50px);"
         onContextMenu="return false;"
       />
-    </p>
-    <hr class="hr-line" />
-    <p class="flex gap-x-4 gap-y-2 justify-center">
-      Find me on
-      {
-        siteConfig.socialLinks.map((link) => (
-          <a aria-label={link.text} href={link.href} target="_blank">
-            <i class:list={[link.icon]} />
-          </a>
-        ))
-      }
-    </p>
+    </div>
   </article>
+  <hr class="hr-line" />
+  <p class="flex gap-x-4 gap-y-2 flex-wrap justify-center">
+    {
+      siteConfig.socialLinks.map((link) => (
+        <a aria-label={link.text} href={link.href} target="_blank">
+          <i class:list={[link.icon]} />
+        </a>
+      ))
+    }
+  </p>
 </BaseLayout>
