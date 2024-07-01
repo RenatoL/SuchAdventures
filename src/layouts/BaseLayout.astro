@@ -2,7 +2,6 @@
 import { fade } from 'astro:transitions'
 import { ViewTransitions } from 'astro:transitions'
 import BaseHead from '@/components/BaseHead.astro'
-import Header from '@/components/Header.vue'
 import HeaderAstro from '@/components/Header.astro'
 import Footer from '@/components/Footer.vue'
 import ScrollToTop from '@/components/ScrollToTop.vue'
@@ -16,7 +15,9 @@ const { ...head } = Astro.props
     <BaseHead {...head} />
     <ViewTransitions />
   </head>
-  <body class="bg-main text-main min-h-screen font-sans w-full bg-dot">
+  <body
+    class="bg-main text-main min-h-screen font-sans w-full bg-dot justify-between"
+  >
     <HeaderAstro />
     <main
       class="grow max-w-3xl mx-auto sm:pt-36 pt-26 pb-16 px-6 relative"

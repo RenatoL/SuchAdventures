@@ -1,10 +1,18 @@
 ---
-import { Image } from 'astro:assets'
-import dogePicture from '/src/assets/wow-doge.png'
-import heroLogo from '/src/assets/NatureTattoo.png'
+
 ---
 
-<nav class="sm:flex hidden flex-wrap gap-x-6 position-initial flex-row">
-  <a href="/stories">Content</a>
-  <a href="/gear">Gear</a>
+<nav
+  class="nav-links font-bold uppercase flex flex-1 justify-center gap-x-6
+  lt-sm:flex-self-end lt-sm:flex-col lt-sm:items-center"
+>
+  <a href="/stories" class="nav-link">Stories</a>
+  <a href="/gear" class="nav-link">Gear</a>
 </nav>
+
+<style>
+  .nav-links a {
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+</style>
